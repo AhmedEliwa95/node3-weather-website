@@ -31,8 +31,8 @@ app.get('',(req,res)=>{
 
 app.get('/about',(req,res)=>{
     res.render('about.hbs',{
-        title:'About Me',
-        name:'Ahmed LOLO'
+        title:'About this Weather App',
+        name:'Ahmed Eliwa'
     })
 });
 app.get('/help',(rea,res)=>{
@@ -74,11 +74,7 @@ app.get('/weather',(req,res)=>{
             })
         })
     })
-    // res.send([
-    //     {forecast : 'Tempreture:18'},
-    //     {location  : 'Egypt'},
-    //     {address  : req.query.address},
-    // ]);
+   
 });
 app.get('/products',(req,res)=>{
     if(!req.query.search){
